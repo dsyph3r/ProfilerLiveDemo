@@ -13,7 +13,7 @@ Currently under construction - Not in working state yet!
 If you want to see the Doctrine Profiler information being displayed you need to
 configure and create the database as follows:
 
- 1  Update 'database_' parameters in the config file 'app/parameter.ini'
+ 1.  Update 'database_' parameters in the config file 'app/parameter.ini'
  2. Create the database with 'php app/console doctrine:database:create'
  3. Update schema with 'php app/console doctrine:schema:create'
 
