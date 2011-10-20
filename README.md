@@ -1,7 +1,12 @@
 ProfilerLiveDemo
 ================
 
-Currently under construction - Not in working state yet!
+## Overview
+
+Demo project for the [ProfileLiveBundle](https://github.com/dsyph3r/ProfilerLiveBundle)
+for Symfony2
+
+![profile_live_bundle](http://twitpic.com/737t5f)
 
 ## Installing
 
