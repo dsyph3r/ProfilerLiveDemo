@@ -1,0 +1,19 @@
+ProfilerDemoBundle_homepage:
+    pattern:  /
+    defaults: { _controller: ProfilerDemoBundle:Demo:index }
+    
+ProfilerDemoBundle_method:
+    pattern:  /profiler_demo/method
+    defaults: { _controller: ProfilerDemoBundle:Demo:method }
+    
+ProfilerDemoBundle_content_type:
+    pattern:  /profiler_demo/content_type
+    defaults: { _controller: ProfilerDemoBundle:Demo:contentType }
+
+ProfilerDemoBundle_status_code:
+    pattern:  /profiler_demo/status_code/{code}
+    defaults: { _controller: ProfilerDemoBundle:Demo:statusCode }
+    
+ProfilerDemoBundle_extra:
+    pattern:  /profiler_demo/extra/{action}
+    defaults: { _controller: ProfilerDemoBundle:Demo:extra }

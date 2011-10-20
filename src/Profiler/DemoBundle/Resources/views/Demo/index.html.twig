@@ -1,0 +1,131 @@
+{% extends 'ProfilerDemoBundle::layout.html.twig' %}
+
+{% block body %}
+
+    <script type="text/javascript">
+        $(function() {
+            $('.methods a').click(function() {
+                var href = $(this).attr('href');
+                var method = $(this).attr('id').replace('method-', '');
+                $.ajax({
+                    url: href,
+                    type: method,
+                });
+
+                return false;
+            });
+
+            $('.status-code a').click(function() {
+                var href = $(this).attr('href');
+                $.ajax({
+                    url: href,
+                });
+
+                return false;
+            });
+
+            $('.content-type a').click(function() {
+                var href = $(this).attr('href');
+                $.ajax({
+                    url: href,
+                });
+
+                return false;
+            });
+
+            $('.extra a').click(function() {
+                var href = $(this).attr('href');
+                $.ajax({
+                    url: href,
+                });
+
+                return false;
+            });
+        });
+    </script>
+
+    <div id="wrapper">
+
+        <div class="button-group">
+            <div class="buttons">
+                <a href="{{ path('ProfilerLiveBundle_homepage') }}" id="method-profiler" target="_blank">
+                    Launch Profiler
+                </a>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <h2>Methods</h2>
+
+            <div class="buttons methods">
+                <a href="{{ path('ProfilerDemoBundle_method') }}" id="method-get">
+                    GET
+                </a>
+                <a href="{{ path('ProfilerDemoBundle_method') }}" id="method-post">
+                    POST
+                </a>
+                <a href="{{ path('ProfilerDemoBundle_method') }}" id="method-put">
+                    PUT
+                </a>
+                <a href="{{ path('ProfilerDemoBundle_method') }}" id="method-delete">
+                    DELETE
+                </a>
+            </div>
+        </div>
+
+        <div class="button-group">
+
+            <h2>Status Code</h2>
+
+            <div class="buttons status-code">
+                <a href="{{ path('ProfilerDemoBundle_status_code', { 'code': 200 }) }}" id="status-code-200">
+                    200
+                </a>
+                <a href="{{ path('ProfilerDemoBundle_status_code', { 'code': 302 }) }}" id="status-code-302">
+                    302
+                </a>
+                <a href="{{ path('ProfilerDemoBundle_status_code', { 'code': 404 }) }}" id="status-code-404">
+                    404
+                </a>
+                <a href="{{ path('ProfilerDemoBundle_status_code', { 'code': 500 }) }}" id="status-code-500">
+                    500
+                </a>
+            </div>
+        </div>
+
+        <div class="button-group">
+
+        <h2>Content Type</h2>
+
+            <div class="buttons content-type">
+                <a href="{{ path('ProfilerDemoBundle_content_type') }}" id="content-type-html">
+                    TEXT/HTML
+                </a>
+                <a href="{{ path('ProfilerDemoBundle_content_type', { '_format': 'json' }) }}" id="content-type-json">
+                    JSON
+                </a>
+                <a href="{{ path('ProfilerDemoBundle_content_type', { '_format': 'xml' }) }}" id="content-type-xml">
+                    XML
+                </a>
+            </div>
+        </div>
+
+        <div class="button-group">
+
+            <h2>Extra</h2>
+
+            <div class="buttons extra">
+                <a href="{{ path('ProfilerDemoBundle_extra', { 'action': 'doctrine' }) }}" id="extra-doctrine">
+                    Doctrine
+                </a>
+                <a href="{{ path('ProfilerDemoBundle_extra', { 'action': 'email' }) }}" id="extra-email">
+                    Emails
+                </a>
+                <a href="{{ path('ProfilerDemoBundle_extra', { 'action': 'sub_request' }) }}" id="extra-sub-request">
+                    Sub Requests
+                </a>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

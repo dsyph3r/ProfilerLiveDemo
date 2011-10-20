@@ -1,6 +1,6 @@
-_welcome:
-    pattern:  /
-    defaults: { _controller: AcmeDemoBundle:Welcome:index }
+ProfilerLiveBundle:
+    resource: "@ProfilerLiveBundle/Resources/config/routing.yml"
+    prefix:   /
 
 _demo_secured:
     resource: "@AcmeDemoBundle/Controller/SecuredController.php"

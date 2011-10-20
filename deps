@@ -59,3 +59,7 @@
     git=http://github.com/symfony/AsseticBundle.git
     target=/bundles/Symfony/Bundle/AsseticBundle
     version=v1.0.1
+
+[ProfilerLiveBundle]
+    git=git://github.com/dsyph3r/ProfilerLiveBundle.git
+    target=/bundles/Profiler/LiveBundle
