@@ -6,6 +6,8 @@ ProfilerLiveDemo
 Demo project for the [ProfileLiveBundle](https://github.com/dsyph3r/ProfilerLiveBundle)
 for Symfony2
 
+![profiler_live_bundle](https://github.com/dsyph3r/ProfilerLiveDemo/raw/master/src/Profiler/DemoBundle/Resources/public/images/screenshot.jpg)
+
 ## Installing
 
  1. Clone the repository
