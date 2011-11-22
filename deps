@@ -63,3 +63,7 @@
 [ProfilerLiveBundle]
     git=git://github.com/dsyph3r/ProfilerLiveBundle.git
     target=/bundles/Profiler/LiveBundle
+
+[WebProfilerExtraBundle]
+    git=http://github.com/Elao/WebProfilerExtraBundle.git
+    target=/bundles/Elao/WebProfilerExtraBundle
