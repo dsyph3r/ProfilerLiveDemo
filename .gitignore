@@ -6,3 +6,4 @@ app/logs/*
 web/bundles/*
 app/DoctrineMigrations
 *~
+*.sublime*
